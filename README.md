@@ -15,8 +15,8 @@ return <Text>Your CustomComponent 1</Text>
 ```
 ## Usage
 ```
- $ git clone https://github.com/CybeXTron/React-Native-Expo-CustomComponent.git
- $ cd React-Native-Expo-CustomComponent
+ $ git clone https://github.com/SuryaKarmakar/React-Native-CustomComponent.git
+ $ cd React-Native-CustomComponent
  $ npm install 
  $ npm run [web, android, ios]
  
