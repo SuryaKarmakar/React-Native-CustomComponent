@@ -1,28 +1,21 @@
 # React Native Custom Component
 
-## Custom Component : 
-<p>Every component name should be start with <b>Capital latter</b></p>
+## Usage :
+
+- Every component name should be start with <b>Capital latter</b> :
 
 ```js
-const CustomComponent1 = () =>{
-return <Text>Your CustomComponent 1</Text>
-} 
+const CustomComponent1 = () => {
+  return (
+    <View>
+      <Text>Your CustomComponent 1</Text>
+    </View>
+  );
+};
 ```
-<p>Using this component into our code then just put it as a self closing tag</p>
+
+- You can use this component into your app like this :
 
 ```js
-<CustomComponent1/>
-```
-## Usage
-```
- $ git clone https://github.com/SuryaKarmakar/React-Native-CustomComponent.git
- $ cd React-Native-CustomComponent
- $ npm install 
- $ npm run [web, android, ios]
- 
-```
-## Run with Expo 
-```
- $ expo start --[web, android, ios]
-
+<CustomComponent1 />
 ```

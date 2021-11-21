@@ -1,24 +1,26 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from "react";
+import { StyleSheet, Text, View } from "react-native";
 
-// Here you define/create a user define custom component
+// This is a Function based component
 const CustomComponent1 = () => {
   return (
-    <view>
+    <View>
       <Text>Your CustomComponent 1</Text>
-    </view>
+    </View>
   );
-}
+};
 
-const CustomComponent2 = () => {
-  return (
-    <view>
-      <Text>Your CustomComponent 2</Text>
-    </view>
-  );
+// This is a Class based component
+class CustomComponent2 extends Component {
+  render() {
+    return (
+      <View>
+        <Text>Your CustomComponent 2</Text>
+      </View>
+    );
+  }
 }
-
-// Root component .........................................................................
+// This is a Root component
 const App = () => {
   return (
     <View style={styles.container}>
@@ -27,13 +29,13 @@ const App = () => {
       <CustomComponent2 />
     </View>
   );
-}
+};
 export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
