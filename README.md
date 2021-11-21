@@ -17,5 +17,11 @@ const CustomComponent1 = () => {
 - You can use this component into your app like this :
 
 ```js
-<CustomComponent1 />
+const App = () => {
+  return (
+    <View>
+      <CustomComponent1 />
+    </View>
+  );
+};
 ```
