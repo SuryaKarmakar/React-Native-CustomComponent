@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
+import CustomComponent3 from "./src/components/CustomComponent3";
 
 // This is a Function based component
 const CustomComponent1 = () => {
   return (
     <View>
-      <Text>Your CustomComponent 1</Text>
+      <Text>CustomComponent 1</Text>
     </View>
   );
 };
@@ -15,11 +16,12 @@ class CustomComponent2 extends Component {
   render() {
     return (
       <View>
-        <Text>Your CustomComponent 2</Text>
+        <Text>CustomComponent 2</Text>
       </View>
     );
   }
 }
+
 // This is a Root component
 const App = () => {
   return (
@@ -27,6 +29,8 @@ const App = () => {
       {/*Here we use our custom component*/}
       <CustomComponent1 />
       <CustomComponent2 />
+      {/* */}
+      <CustomComponent3 />
     </View>
   );
 };
